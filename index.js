@@ -38,6 +38,11 @@ function displayCSVData(csvData) {
         table.appendChild(row);
     });
 
+    const headerRow = table.querySelector('#row1');
+    const headerCells = headerRow.querySelectorAll('td');
+    headerCells.forEach(cell => {
+        cell.classList.remove('spanish');
+    });
 
     numbersContainer.appendChild(table);
 }

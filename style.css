@@ -19,3 +19,7 @@ td{
 .correct{
     background-color: green;
 }
+
+#answer{
+    margin: 10px 0px;
+}
