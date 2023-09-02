@@ -1,11 +1,11 @@
 const answerInput = document.getElementById('answer');
 const showButton = document.getElementById('showAnswersBtn');
-const numbersContainer = document.getElementById('numbersContainer');
+const dataContainer = document.getElementById('dataContainer');
 const valuesArray = [];
 let rowNumber = 0;
 
 // Ścieżka do pliku CSV
-const csvFilePath = 'csvs/numbers.csv'; // Zmień na odpowiednią ścieżkę do swojego pliku CSV
+const csvFilePath = 'csvs/'+document.title+'.csv'; // Zmień na odpowiednią ścieżkę do swojego pliku CSV
 
 // Funkcja do wczytywania i wyświetlania danych
 function displayCSVData(csvData) {
@@ -44,7 +44,7 @@ function displayCSVData(csvData) {
         cell.classList.remove('spanish');
     });
 
-    numbersContainer.appendChild(table);
+    dataContainer.appendChild(table);
 }
 
 // Wczytaj plik CSV i wyświetl dane na stronie
