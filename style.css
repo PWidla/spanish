@@ -1,0 +1,21 @@
+*{
+    background-color: antiquewhite;
+    margin-bottom: 5px;
+    padding: 3px;
+}
+
+table{
+    border: 1px solid black;
+}
+
+td{
+    border: 1px solid black;
+}
+
+.spanish{
+    color: antiquewhite;
+}
+
+.correct{
+    background-color: green;
+}
